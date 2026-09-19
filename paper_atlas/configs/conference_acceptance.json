@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-17",
+  "description": "Main research track only. Conference-reported denominators are not uniformly defined. Do not combine different populations or infer missing submission counts from rounded percentages.",
+  "rows": [
+    {"venue":"iclr","year":2022,"accepted":1095,"submitted":3391,"population":"reviewed submissions reported by the program chairs","source":"https://iclr.cc/media/Press/ICLR_2022_Press_Release.pdf"},
+    {"venue":"iclr","year":2023,"accepted":1574,"submitted":4938,"population":"submissions reported in the conference fact sheet; not abstract registrations","source":"https://media.iclr.cc/Conferences/ICLR2023/ICLR2023-Fact_Sheet.pdf"},
+    {"venue":"iclr","year":2024,"accepted":2260,"submitted":7262,"population":"submissions reported in the conference fact sheet","source":"https://media.iclr.cc/Conferences/ICLR2024/ICLR2024-Fact_Sheet.pdf"},
+    {"venue":"iclr","year":2025,"accepted":3704,"submitted":11603,"population":"submissions reported in the conference fact sheet","source":"https://media.iclr.cc/Conferences/ICLR2025/ICLR2025_Fact_Sheet.pdf"},
+    {"venue":"iclr","year":2026,"accepted":5355,"submitted":19525,"population":"valid format-compliant submissions, including subsequent withdrawals and desk rejections","source":"https://blog.iclr.cc/2026/03/31/a-retrospective-on-the-iclr-2026-review-process/"},
+    {"venue":"icml","year":2022,"reason":"No verified organizer baseline in this snapshot."},
+    {"venue":"icml","year":2023,"reason":"No verified organizer baseline in this snapshot."},
+    {"venue":"icml","year":2024,"accepted":2534,"submitted":9187,"population":"main-track submissions excluding desk rejections; derived from organizer email totals by subtracting the position track: (2609 - 75) / (9473 - 286)","source":"https://openreview.net/pdf/93f9090b613a2c28371741242752008478c64b03.pdf"},
+    {"venue":"icml","year":2025,"accepted":3260,"reported_rate":27.0,"population":"main-track acceptance rate reported by the conference (rounded; exact denominator not in this source)","source":"https://media.icml.cc/Conferences/ICML2025/ICML2025_Fact_Sheet.pdf"},
+    {"venue":"icml","year":2026,"accepted":6352,"submitted":23918,"population":"submissions that entered review; excludes earlier desk rejections and withdrawals","source":"https://www.linkedin.com/posts/icmlconf_decision-notifications-are-being-released-activity-7455685189479055361-PXq3"},
+    {"venue":"neurips","year":2022,"accepted":2672,"submitted":10411,"population":"main-track papers; accepted total from 2022 conference highlights, submission total from the 2023 ethics-chair retrospective table","source":"https://blog.neurips.cc/2022/11/22/getting-ready-for-neurips-3-2022-conference-highlights/","additional_sources":["https://blog.neurips.cc/2023/12/09/reflections-on-the-neurips-2023-ethics-review-process/"]},
+    {"venue":"neurips","year":2023,"accepted":3218,"submitted":12343,"population":"main-track submissions reported in the conference fact sheet","source":"https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"},
+    {"venue":"neurips","year":2024,"accepted":4037,"submitted":15671,"population":"main-track submissions reported in the conference fact sheet","source":"https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"},
+    {"venue":"neurips","year":2025,"accepted":5290,"submitted":21575,"population":"valid main-track paper submissions reported by program chairs","source":"https://blog.neurips.cc/2025/09/30/reflections-on-the-2025-review-process-from-the-program-committee-chairs/"},
+    {"venue":"neurips","year":2026,"reason":"Final conference decisions and submission totals are not available in this snapshot."}
+  ]
+}

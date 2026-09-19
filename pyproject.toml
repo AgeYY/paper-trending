@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-atlas"
+version = "0.1.0"
+description = "Local conference literature explorer with auditable topic acceptance rates"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "matplotlib>=3.7", "requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+openreview = ["openreview-py>=2.6.2,<3"]
+embeddings = ["sentence-transformers>=3", "transformers>=4.40", "torch>=2.2"]
+
+[project.scripts]
+paper-atlas = "paper_atlas.conference_web:main"
+paper-atlas-survey = "paper_atlas.conference_survey:main"
+paper-atlas-openreview = "paper_atlas.openreview_auth_check:main"
+paper-atlas-import-decisions = "paper_atlas.iclr_acceptance_data:main"
+
+[tool.setuptools.packages.find]
+include = ["paper_atlas*"]
+
+[tool.setuptools.package-data]
+paper_atlas = ["configs/*.json", "conference_web_assets/*.html", "conference_web_assets/*.css", "conference_web_assets/*.js", "static_assets/*.html", "static_assets/*.css", "static_assets/*.mjs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

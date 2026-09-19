@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Paper Trending · Local conference explorer</title>
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/compact.css"><script src="/app.js" defer></script>
+</head>
+<body class="discovery-page">
+<aside class="sidebar">
+  <div class="local-badge"><span class="dot"></span> Local workspace</div>
+  <nav><button id="new-search" class="nav-button active">＋ &nbsp; New exploration</button><a id="algorithm-link" class="nav-button" href="/algorithm">Search algorithm</a></nav>
+</aside>
+<main>
+  <header class="topbar"><span>Library / Topic discovery</span><span class="status-pill">● &nbsp; Private preview</span></header>
+  <div class="search-brand"><a class="brand" href="/" aria-label="Paper Trending home"><span class="brand-icon" aria-hidden="true">▥</span><span>Paper Trending<small>CONFERENCE EXPLORER</small></span></a></div>
+  <form id="search-form" class="search-card" autocomplete="off">
+    <div class="search-mode-row"><label for="search-mode">Search mode</label><select id="search-mode"><option value="keyword" selected>Keyword</option><option value="ai">AI</option></select></div>
+    <label for="prompt" id="prompt-label" class="query-label">Enter keywords separated by commas</label>
+    <div class="query-row"><textarea id="prompt" rows="1" maxlength="1500" placeholder="e.g. reinforcement learning, language model" required></textarea><button type="submit" id="search-button" class="primary" disabled>Explore topic ↗</button></div>
+    <p id="search-hint" class="ai-pitch muted">Separate phrases with commas. All phrases must match. No AI is used.</p>
+    <div class="suggestions"><span>TRY A TOPIC</span><button type="button" data-example="0">AR language + RL</button><button type="button" data-example="1">Discrete diffusion + RL</button><button type="button" data-example="2">Continuous diffusion + RL</button><button type="button" data-example="3">Flow images + RL</button></div>
+    <details class="scope"><summary>Search scope <span id="scope-label">Recent five years · three conferences</span></summary><div class="scope-grid"><fieldset><legend>Conferences</legend><div id="venues" class="check-row"></div></fieldset><fieldset><legend>Conference years</legend><div id="years" class="check-row"></div></fieldset><fieldset><legend>Paper tracks</legend><label><input type="checkbox" name="track" value="research" checked> Research</label><label><input type="checkbox" name="track" value="position"> Position papers</label><label><input type="checkbox" name="track" value="datasets-and-benchmarks"> Datasets &amp; benchmarks</label></fieldset></div></details>
+  </form>
+  <section id="interpretation" class="search-card" hidden aria-label="Review interpreted concepts">
+    <h2>Interpreted as</h2><p id="interpretation-explanation"></p>
+    <p class="muted">Core concepts must match by keyword or semantic similarity. Supporting evidence boosts ranking only—it never excludes papers. Edit alternatives using one phrase per line.</p>
+    <h3>Core concepts</h3>
+    <div id="concept-editor"></div>
+    <h3>Supporting evidence (optional)</h3>
+    <div id="supporting-editor"></div>
+    <label for="exclusions-editor">Exclude phrases (one per line; also removes background mentions)</label>
+    <textarea id="exclusions-editor" rows="2"></textarea>
+    <p id="interpretation-source" class="muted"></p>
+    <button id="apply-concepts" type="button" class="primary">Search with these concepts ↗</button>
+  </section>
+  <div id="error" class="error" role="alert" hidden></div><p id="loading" class="loading" role="status" hidden>Searching the local corpus…</p>
+  <section id="welcome" class="welcome"><h2>Search a topic to see its publication trend.</h2><p>Automatic title-and-abstract matching, with paper links and downloadable figures. <a href="/algorithm">Read the search algorithm →</a></p></section>
+  <section id="results" hidden aria-label="Search results">
+    <div class="section-heading"><h2 id="result-title">Search results</h2><span id="timing" class="muted"></span></div>
+    <details class="scope"><summary>Search concepts and interpretation</summary><div id="result-concepts"></div></details>
+    <div id="coverage-warning" class="notice" hidden></div>
+    <div class="comparison-grid">
+    <section class="chart-card" aria-label="Publication trend"><div class="card-heading"><h3>Accepted papers over time</h3><div class="downloads"><a id="download-svg" href="#">SVG ↓</a><a id="download-png" href="#">PNG ↓</a><a id="download-pdf" href="#">PDF ↓</a></div></div><div id="chart" class="chart"></div><p id="chart-caption" class="chart-caption">Automatic keyword matches, not verified semantic relevance.</p>
+    <details class="coverage-card"><summary>Conference coverage</summary><div id="coverage-table"></div><p>Missing sources are unavailable, not zero-paper conferences. <a href="/algorithm#counts">How counts are computed →</a></p></details>
+    </section>
+    <section class="acceptance-card" aria-label="Topic acceptance versus conference baseline">
+      <div class="card-heading"><h3>ICLR acceptance rate · topic vs. overall</h3><div class="downloads"><a id="acceptance-svg" href="#">SVG ↓</a><a id="acceptance-png" href="#">PNG ↓</a><a id="acceptance-pdf" href="#">PDF ↓</a></div></div>
+      <div class="acceptance-scroll" tabindex="0" aria-label="Acceptance chart, scroll horizontally on narrow screens"><div id="acceptance-chart"></div></div>
+      <p class="acceptance-key">Filled bars: searched topic · Outline bars: ICLR overall · NA: unavailable, not zero</p>
+      <div id="acceptance-notice" class="notice" role="status"></div>
+      <p class="chart-caption" id="acceptance-caption">Main research track. Both bars use the same submission pool. Public-pool rates include withdrawals and desk rejections. Topic membership uses the same recorded matching rules as the publication chart, not manually verified relevance.</p>
+      <details class="acceptance-details"><summary>Counts, denominators &amp; sources</summary><div class="table-wrap" id="acceptance-table"></div><p><a id="acceptance-csv" href="#">Acceptance data CSV ↓</a> · <a href="/algorithm#acceptance">How acceptance rates are computed →</a></p></details>
+    </section>
+    </div>
+    <section class="papers-section"><div class="paper-toolbar"><div><h2>Matching papers</h2><p id="paper-count" class="muted"></p></div><div class="paper-controls"><select id="sort" aria-label="Sort papers"><option value="relevance">Best match</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select><a id="download-csv" class="secondary compact" href="#">Papers CSV ↓</a></div></div><div id="papers"></div><div class="pagination"><button id="previous" class="secondary">← Previous</button><span id="page-info"></span><button id="next" class="secondary">Next →</button></div><div class="more-exports"><a id="download-counts" href="#">Download yearly counts CSV</a><a id="download-json" href="#">Download search metadata</a></div></section>
+  </section>
+  <footer><span>Created by Zeyuan Ye</span><a href="/algorithm">Search algorithm</a></footer>
+</main>
+</body></html>

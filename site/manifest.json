@@ -1,0 +1,1010 @@
+{
+  "format": 1,
+  "repository": "https://github.com/AgeYY/paper-trending",
+  "site_url": "https://ageyy.github.io/paper-trending/",
+  "snapshot": "2026-09-17T03:31:52.771763+00:00",
+  "corpus_sha256": "9e323f7d87740a9508a08f818141aa601d8b818116d577e88ed6387a8d625771",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "venues": {
+    "iclr": "ICLR",
+    "icml": "ICML",
+    "neurips": "NeurIPS"
+  },
+  "tracks": [
+    "research",
+    "position",
+    "datasets-and-benchmarks"
+  ],
+  "shards": [
+    {
+      "file": "data/papers-iclr-2022-50fee7593818.json.gz",
+      "bytes": 558265,
+      "sha256": "50fee75938180c0e61adf326dfae752f0c352ba9c9e6b0bb564c33a9c855c042",
+      "kind": "papers",
+      "year": 2022,
+      "venue": "iclr",
+      "count": 1095
+    },
+    {
+      "file": "data/papers-icml-2022-791fde8923ff.json.gz",
+      "bytes": 571173,
+      "sha256": "791fde8923ff73ef58c5159ef748ddb6e99e94858240fbc7e8a1336ad2b0d78f",
+      "kind": "papers",
+      "year": 2022,
+      "venue": "icml",
+      "count": 1233
+    },
+    {
+      "file": "data/papers-neurips-2022-bf1d3651368c.json.gz",
+      "bytes": 1513823,
+      "sha256": "bf1d3651368cbde79a13a91822b41f784e17bb81a524c00ccf5f497dc5ec04ab",
+      "kind": "papers",
+      "year": 2022,
+      "venue": "neurips",
+      "count": 2906
+    },
+    {
+      "file": "data/papers-iclr-2023-e620695b378d.json.gz",
+      "bytes": 827045,
+      "sha256": "e620695b378d6f038b348fd838f9c67548b20df107983595358282433118c4b2",
+      "kind": "papers",
+      "year": 2023,
+      "venue": "iclr",
+      "count": 1584
+    },
+    {
+      "file": "data/papers-icml-2023-573302f01893.json.gz",
+      "bytes": 861354,
+      "sha256": "573302f018939b128ad8e3cfb35810266aa218f6fc0d67db42aff6f27c27c835",
+      "kind": "papers",
+      "year": 2023,
+      "venue": "icml",
+      "count": 1865
+    },
+    {
+      "file": "data/papers-neurips-2023-56194f3b0bff.json.gz",
+      "bytes": 1981718,
+      "sha256": "56194f3b0bff8574e3dc053823dd7a9ceb9f57237853cda5c9cbef9e97b75416",
+      "kind": "papers",
+      "year": 2023,
+      "venue": "neurips",
+      "count": 3584
+    },
+    {
+      "file": "data/papers-iclr-2024-a20faff3d5f3.json.gz",
+      "bytes": 1234942,
+      "sha256": "a20faff3d5f31387cd89cdbab4fd5e654b1d9a76179ce599644e14725ff30e54",
+      "kind": "papers",
+      "year": 2024,
+      "venue": "iclr",
+      "count": 2296
+    },
+    {
+      "file": "data/papers-icml-2024-811bbf353174.json.gz",
+      "bytes": 1268672,
+      "sha256": "811bbf35317406cb02867a73c9456ea649af278ac6229665d8e00157cda7f78d",
+      "kind": "papers",
+      "year": 2024,
+      "venue": "icml",
+      "count": 2634
+    },
+    {
+      "file": "data/papers-neurips-2024-65669003d10f.json.gz",
+      "bytes": 2569527,
+      "sha256": "65669003d10f8cb3144eb115c461354b51f56fd5fad7279642c60ab53b42e2c0",
+      "kind": "papers",
+      "year": 2024,
+      "venue": "neurips",
+      "count": 4537
+    },
+    {
+      "file": "data/papers-iclr-2025-7e55d7db1e4f.json.gz",
+      "bytes": 2130887,
+      "sha256": "7e55d7db1e4f05bde96d76164d74fa587b23b21f9f4cb44cfa5f53f1dd8854fc",
+      "kind": "papers",
+      "year": 2025,
+      "venue": "iclr",
+      "count": 3830
+    },
+    {
+      "file": "data/papers-icml-2025-e929047b0364.json.gz",
+      "bytes": 1688513,
+      "sha256": "e929047b0364a7ae5c2e8023927ec62c4615235d59f9ae668a61f7cdb376c90b",
+      "kind": "papers",
+      "year": 2025,
+      "venue": "icml",
+      "count": 3339
+    },
+    {
+      "file": "data/papers-neurips-2025-3ae10402c4c8.json.gz",
+      "bytes": 3281957,
+      "sha256": "3ae10402c4c8fa625b1dc7804be8c4fe9626c59ee812251f302ded6eacfcbf6b",
+      "kind": "papers",
+      "year": 2025,
+      "venue": "neurips",
+      "count": 5858
+    },
+    {
+      "file": "data/papers-iclr-2026-17ca9acdeea9.json.gz",
+      "bytes": 3159742,
+      "sha256": "17ca9acdeea9eab3274c4abd3a6802eaaeb9ac4285b6e48cbf099def2bd71133",
+      "kind": "papers",
+      "year": 2026,
+      "venue": "iclr",
+      "count": 5468
+    },
+    {
+      "file": "data/papers-icml-2026-7efb255b8a63.json.gz",
+      "bytes": 3542519,
+      "sha256": "7efb255b8a637ca1698384ef92de72e5a3c3c508d2fa718e6038b06df5790522",
+      "kind": "papers",
+      "year": 2026,
+      "venue": "icml",
+      "count": 6628
+    },
+    {
+      "file": "data/submissions-iclr-2022-fcad25d1dd38.json.gz",
+      "bytes": 1304160,
+      "sha256": "fcad25d1dd38440da85b38a142cb76052664108702ef5cbef3b1080c83647e8f",
+      "kind": "submissions",
+      "year": 2022,
+      "venue": "iclr",
+      "count": 3422
+    },
+    {
+      "file": "data/submissions-iclr-2023-8b3739707b22.json.gz",
+      "bytes": 1942361,
+      "sha256": "8b3739707b22cabf177a90a7b0e6e605e6f2858b45a4181d60b8c6074b3dbe98",
+      "kind": "submissions",
+      "year": 2023,
+      "venue": "iclr",
+      "count": 4955
+    },
+    {
+      "file": "data/submissions-iclr-2024-bd8236c7ce83.json.gz",
+      "bytes": 3000351,
+      "sha256": "bd8236c7ce8382e6f315d241f36225dec18f61a500f2c5e671d73a11378de5fe",
+      "kind": "submissions",
+      "year": 2024,
+      "venue": "iclr",
+      "count": 7404
+    },
+    {
+      "file": "data/submissions-iclr-2025-21778a0a721c.json.gz",
+      "bytes": 4848450,
+      "sha256": "21778a0a721c756519c927545bb158c975c9a313901d97224b89610a38f8ea82",
+      "kind": "submissions",
+      "year": 2025,
+      "venue": "iclr",
+      "count": 11672
+    }
+  ],
+  "coverage": {
+    "research": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1095,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1233,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 2676,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1574,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1828,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 3218,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 2260,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 2535,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 4035,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 3708,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 3258,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 5287,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 5353,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 6341,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ],
+    "position": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 75,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 73,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 40,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 213,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ],
+    "datasets-and-benchmarks": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 163,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 322,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 459,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 497,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ],
+    "position,research": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1095,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1233,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 2676,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1574,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1828,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 3218,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 2260,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 2610,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 4035,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 3708,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 3331,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 5327,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 5353,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 6554,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ],
+    "datasets-and-benchmarks,research": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1095,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1233,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 2839,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1574,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1828,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 3540,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 2260,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 2535,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 4494,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 3708,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 3258,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 5784,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 5353,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 6341,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ],
+    "datasets-and-benchmarks,position": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 163,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 322,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 75,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 459,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 73,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 537,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 0,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 213,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ],
+    "datasets-and-benchmarks,position,research": [
+      {
+        "year": 2022,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1095,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1233,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2022,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 2839,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 1574,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 1828,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2023,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 3540,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 2260,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 2610,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2024,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 4494,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 3708,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 3331,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2025,
+        "venue": "neurips",
+        "status": "complete",
+        "papers": 5824,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "iclr",
+        "status": "complete",
+        "papers": 5353,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "icml",
+        "status": "complete",
+        "papers": 6554,
+        "missing_abstracts": 0
+      },
+      {
+        "year": 2026,
+        "venue": "neurips",
+        "status": "unavailable",
+        "papers": 0,
+        "missing_abstracts": 0
+      }
+    ]
+  },
+  "acceptance": {
+    "2022": {
+      "available": true,
+      "reason": "",
+      "official_accepted": 1095,
+      "official_submitted": 3391,
+      "official_rate": 32.29135948097906,
+      "official_source": "https://iclr.cc/media/Press/ICLR_2022_Press_Release.pdf",
+      "submitted": 3422,
+      "accepted": 1095,
+      "population": "All records in the exhausted official ICLR public submission query, including withdrawals and desk rejections. An official decision takes precedence over a later workflow withdrawal. This public pool is not the organizer's reported cohort.",
+      "source": "https://openreview.net/group?id=ICLR.cc/2022/Conference",
+      "retrieved_at": "2026-09-17T06:30:38.752823+00:00",
+      "sha256": "dbeaaf2b66ed27d41650a3c0906fc59279b3fff05a9a252b00a609e069b8ebbf",
+      "public_snapshot": true
+    },
+    "2023": {
+      "available": true,
+      "reason": "",
+      "official_accepted": 1574,
+      "official_submitted": 4938,
+      "official_rate": 31.87525313892264,
+      "official_source": "https://media.iclr.cc/Conferences/ICLR2023/ICLR2023-Fact_Sheet.pdf",
+      "submitted": 4955,
+      "accepted": 1575,
+      "population": "All records in the exhausted official ICLR public submission query, including withdrawals and desk rejections. An official decision takes precedence over a later workflow withdrawal. This public pool is not the organizer's reported cohort.",
+      "source": "https://openreview.net/group?id=ICLR.cc/2023/Conference",
+      "retrieved_at": "2026-09-17T06:30:58.789155+00:00",
+      "sha256": "9f118cd1139f6b581c6b8794b650c57692d0afda5ed11138b9c3d1c93d3fbda9",
+      "public_snapshot": true
+    },
+    "2024": {
+      "available": true,
+      "reason": "",
+      "official_accepted": 2260,
+      "official_submitted": 7262,
+      "official_rate": 31.120903332415313,
+      "official_source": "https://media.iclr.cc/Conferences/ICLR2024/ICLR2024-Fact_Sheet.pdf",
+      "submitted": 7404,
+      "accepted": 2261,
+      "population": "All records in the exhausted official ICLR public submission query, including withdrawals and desk rejections. An official decision takes precedence over a later workflow withdrawal. This public pool is not the organizer's reported cohort.",
+      "source": "https://openreview.net/group?id=ICLR.cc/2024/Conference",
+      "retrieved_at": "2026-09-17T06:31:25.957778+00:00",
+      "sha256": "3540badf865c530068f6313c6bd9c4c7b5e0f423c042ea4a640aa5b39a270448",
+      "public_snapshot": true
+    },
+    "2025": {
+      "available": true,
+      "reason": "",
+      "official_accepted": 3704,
+      "official_submitted": 11603,
+      "official_rate": 31.922778591743516,
+      "official_source": "https://media.iclr.cc/Conferences/ICLR2025/ICLR2025_Fact_Sheet.pdf",
+      "submitted": 11672,
+      "accepted": 3708,
+      "population": "All records in the exhausted official ICLR public submission query, including withdrawals and desk rejections. An official decision takes precedence over a later workflow withdrawal. This public pool is not the organizer's reported cohort.",
+      "source": "https://openreview.net/group?id=ICLR.cc/2025/Conference",
+      "retrieved_at": "2026-09-17T06:32:07.513006+00:00",
+      "sha256": "4fad120daac607b5e890f022d1c544430ccbc97cc229c78b1cb0e4a4a00901de",
+      "public_snapshot": true
+    },
+    "2026": {
+      "available": false,
+      "reason": "No verified public submission pool in this snapshot.",
+      "official_accepted": 5355,
+      "official_submitted": 19525,
+      "official_rate": 27.42637644046095,
+      "official_source": "https://blog.iclr.cc/2026/03/31/a-retrospective-on-the-iclr-2026-review-process/"
+    }
+  },
+  "download_bytes": 36285459
+}

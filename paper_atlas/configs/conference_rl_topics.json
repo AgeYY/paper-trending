@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scope": "Broad RL-method candidates in title plus abstract; not verified algorithm counts. DPO-only papers without RL terms are outside this default query. Categories may overlap and require manual model-family attribution.",
+  "groups": {
+    "rl": ["reinforcement learning", "RLHF", "RLVR", "GRPO", "PPO", "REINFORCE", "policy gradient", "policy optimization", "policy optimisation", "reward maximization", "reward maximisation", "reward optimization", "reward optimisation"],
+    "language": ["language model", "language models", "LLM", "LLMs", "text generation", "text diffusion", "diffusion language", "language generation"],
+    "diffusion": ["diffusion", "denoising", "masked language", "masking", "MDLM", "D3PM", "discrete flow"],
+    "discrete": ["discrete", "masked", "masking", "mask", "tokens", "token", "MDLM", "D3PM", "LLaDA", "SEDD"],
+    "continuous": ["continuous", "latent", "embedding", "embeddings", "flow matching", "rectified flow", "probability flow", "score-based", "Gaussian"],
+    "flow": ["flow matching", "flow-matching", "rectified flow", "flow-based", "flow model", "flow models", "flow policy", "flow policies", "FLUX", "Stable Diffusion 3"],
+    "image": ["image generation", "image synthesis", "text-to-image", "text to image", "visual generation", "image generative", "image generators", "images", "FLUX", "Stable Diffusion"]
+  },
+  "topics": [
+    {
+      "id": "ar_lm_rl",
+      "label": "Autoregressive language",
+      "description": "RL training or fine-tuning of autoregressive language generators. Generic LLM RL papers are retrieved; reviewers must check the trained model, not just background mentions.",
+      "all_of": ["rl", "language"],
+      "none_of": [],
+      "query": "Reinforcement learning fine-tuning of autoregressive large language models using policy gradients, PPO, GRPO, RLHF or verifiable rewards."
+    },
+    {
+      "id": "discrete_lm_rl",
+      "label": "Discrete diffusion language",
+      "description": "RL of categorical or masked diffusion language generators, including continuous-time discrete-state models. Not continuous embedding-space diffusion.",
+      "all_of": ["rl", "language", "diffusion", "discrete"],
+      "none_of": [],
+      "query": "Reinforcement learning post-training of discrete masked diffusion language models, optimizing token unmasking generators with policy gradients and rewards."
+    },
+    {
+      "id": "continuous_lm_rl",
+      "label": "Continuous diffusion language",
+      "description": "RL of continuous-state diffusion or flow-matching language generators in embedding/latent space. Continuous time alone does not qualify; reject papers whose only trained component is an external discrete controller.",
+      "all_of": ["rl", "language", {"any": ["diffusion", "flow matching", "flow-matching", "rectified flow"]}, "continuous"],
+      "none_of": [],
+      "query": "Reinforcement learning fine-tuning of continuous latent-space or embedding-space diffusion and flow-matching models for text generation, optimizing the continuous language generator."
+    },
+    {
+      "id": "flow_image_rl",
+      "label": "Flow-matching images",
+      "description": "RL of flow-matching or rectified-flow image generators. Generic image diffusion and flow policies for robot actions do not suffice.",
+      "all_of": ["rl", "flow", "image"],
+      "none_of": [],
+      "query": "Reinforcement learning fine-tuning of flow-matching and rectified-flow text-to-image generative models such as FLUX using rewards and policy optimization."
+    }
+  ]
+}

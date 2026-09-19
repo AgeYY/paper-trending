@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'">
+<meta name="description" content="Explore ICLR, ICML and NeurIPS paper trends with browser-only keyword search and transparent ICLR acceptance comparisons.">
+<link rel="canonical" href="https://ageyy.github.io/paper-trending/">
+<title>Paper Trending · Conference explorer</title>
+<link rel="stylesheet" href="site.css"><script type="module" src="site.mjs"></script>
+</head>
+<body><main>
+<header><a href="./" class="brand"><span aria-hidden="true">▥</span> Paper Trending</a><p class="eyebrow">CONFERENCE EXPLORER</p></header>
+<section class="intro"><p>Explore how research topics grow across ICLR, ICML and NeurIPS.</p>
+<p class="muted">Lightweight demo: keyword search only. <a id="source" href="https://github.com/">Run the full app locally for AI-assisted and semantic search →</a></p></section>
+<form id="search-form" autocomplete="off">
+<label for="prompt">Keywords or phrases, separated by commas</label>
+<div class="query-row"><input id="prompt" maxlength="1500" placeholder="reinforcement learning, language model" required><button id="search" disabled>Explore topic ↗</button></div>
+<p class="muted">All phrases must match the title or abstract. No synonyms or AI expansion.</p>
+<details><summary>Search scope</summary><div class="filters"><fieldset><legend>Conferences</legend><div id="venues"></div></fieldset><fieldset><legend>Years</legend><div id="years"></div></fieldset><fieldset><legend>Tracks</legend><div id="tracks"></div></fieldset></div></details>
+</form>
+<p id="status" role="status">Loading snapshot information…</p><p id="error" role="alert" hidden></p>
+<p id="snapshot" class="muted"></p>
+<section id="results" hidden><h2 id="result-title"></h2><p id="warning" class="notice"></p>
+<div class="charts">
+<article><h3>Accepted papers over time</h3><div id="counts-chart"></div><div class="downloads"><button data-chart="counts-chart" data-format="svg">SVG ↓</button><button data-chart="counts-chart" data-format="png">PNG ↓</button><button id="counts-csv">Counts CSV ↓</button></div><p class="muted">Automatic keyword matches, not verified relevance. * Partial coverage; NA is unavailable, not zero.</p></article>
+<article><h3>ICLR acceptance rate · topic vs. overall</h3><div id="acceptance-chart"></div><div class="downloads"><button data-chart="acceptance-chart" data-format="svg">SVG ↓</button><button data-chart="acceptance-chart" data-format="png">PNG ↓</button><button id="acceptance-csv">Rates CSV ↓</button></div><p class="muted">Filled: topic. Outline: same-pool overall. Public pools include withdrawals and desk rejections, not the organizer’s reported cohort. NA includes 0/0. Small samples can give unstable rates.</p></article>
+</div>
+<details><summary>Acceptance denominators and sources</summary><div id="denominators" class="table-wrap"></div></details>
+<div class="paper-heading"><h2 id="paper-total"></h2><select id="sort" aria-label="Sort papers"><option value="relevance">Title matches first</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select><button id="papers-csv">Papers CSV ↓</button><button id="metadata-json">Search metadata ↓</button></div>
+<div id="papers"></div><nav class="pagination"><button id="previous">← Previous</button><span id="page"></span><button id="next">Next →</button></nav>
+</section>
+<details class="about"><summary>How search works · data and privacy</summary>
+<p>The browser downloads compressed public metadata for the selected conference-years on demand. It searches full titles and abstracts in a background worker. Unicode and punctuation are normalized; simple plural endings are folded. Comma-separated phrases must all occur as contiguous whole-word phrases. The Python app uses the same membership rule; this demo ranks by title matches, then year.</p>
+<p>Counts include every matching paper, not only the displayed page. Acceptance rates use the same phrase rules on all records in each verified ICLR submission pool. Both bars share that pool; published organizer rates are separate references. Rates require the Research track alone. Missing sources are not treated as zero.</p>
+<p>No account, API key, analytics, search-history storage, or query transmission is used by this demo. Public data may be cached by your browser. GitHub receives file requests and maintains hosting security logs. Large selections can take longer on mobile. A current browser with JavaScript, Web Workers and gzip decompression support is required. Chart exports are SVG/PNG; PDF and AI/semantic search are available in the full local app.</p>
+<p>Metadata and abstracts retain their original rights and are not covered by the software license. Source links are provided with papers and rates. See <a id="data-doc" href="https://github.com/">data provenance and reuse notes</a>. No paper PDFs or review text are bundled.</p>
+</details>
+<footer>Created by Zeyuan Ye · <a id="repo" href="https://github.com/">Source code &amp; local setup</a></footer>
+</main></body></html>
